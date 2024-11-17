@@ -91,8 +91,10 @@ Endpoint: `GET /api/posts/friends/{userId}`
 
 URL Parameters: 
 * `userId`: The id of the user requesting the posts.
+
 Request Headers:
 * `Authorization`: Bearer token for authenticated user.
+
 Response:
 ```json
 {
@@ -150,8 +152,10 @@ Endpoint: `GET /api/posts/extended-feed/{userId}`
 
 URL Parameters:
 * `userId`: The ID of the user requesting the posts (authenticated user).
+
 Request Header:
 * `Authoroization`:Bearer token for the authenticated user.
+
 Database Queries(Example):
 ```js
 // Get user's friends
@@ -171,6 +175,7 @@ let posts = db.posts.find({
   ]
 });
 ```
+
 Response Format:
 ```json
 {
